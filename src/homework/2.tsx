@@ -7,7 +7,7 @@ type State = {
   requestStep: RequestStep;
 };
 type Action = {
-  type: string;
+  type: 'START_REQUEST' | 'PENDING_REQUEST' | 'FINISH_REQUEST' | 'RESET_REQUEST';
 };
 const initialState: State = {
   isRequestInProgress: false,
